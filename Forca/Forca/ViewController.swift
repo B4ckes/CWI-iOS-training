@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var characterImageView: UIImageView!
+    @IBOutlet weak var letterTextField: UITextField!
+    @IBOutlet weak var hintLabel: UILabel!
+    
     
     var indice: Int = 1
     
@@ -37,7 +40,12 @@ class ViewController: UIViewController {
      }
     
     @IBAction func onEditingDone(_ sender: Any) {
-        dispatchKeyboard()
+        if let text = letterTextField.text {
+            hintLabel.text?.append(text)
+        }
+    }
+    
+    @IBAction func onTextChange(_ sender: Any) {
+        letterTextField.text = letterTextField.text?.last?.uppercased()
     }
 }
-

@@ -51,17 +51,25 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="done"/>
                                         <connections>
                                             <action selector="onEditingDone:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Y35-6e-VUR"/>
+                                            <action selector="onTextChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="m9y-hR-qr2"/>
                                         </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzK-Ne-rzX">
+                                <rect key="frame" x="207" y="504" width="0.0" height="0.0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Fundo"/>
                         <constraints>
                             <constraint firstItem="NEl-tx-Mia" firstAttribute="top" secondItem="4IJ-Hd-1UV" secondAttribute="top" constant="113" id="3Ty-Bl-o8g"/>
+                            <constraint firstItem="EzK-Ne-rzX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4nm-Te-i6J"/>
                             <constraint firstItem="NEl-tx-Mia" firstAttribute="trailing" secondItem="4IJ-Hd-1UV" secondAttribute="trailing" constant="-8" id="9Or-xs-cMv"/>
                             <constraint firstItem="2ka-Qv-dRs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="KFi-JS-es6"/>
+                            <constraint firstItem="EzK-Ne-rzX" firstAttribute="top" secondItem="4Dt-zH-Q6g" secondAttribute="bottom" constant="20" id="L4l-Lz-wpo"/>
                             <constraint firstItem="4Fn-jB-JG6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WyH-Ye-BSh"/>
                             <constraint firstItem="4IJ-Hd-1UV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="ZUu-oF-ew5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ka-Qv-dRs" secondAttribute="trailing" constant="25" id="fSl-vv-BC3"/>
@@ -71,6 +79,8 @@
                     </view>
                     <connections>
                         <outlet property="characterImageView" destination="NEl-tx-Mia" id="Xm6-O9-5bB"/>
+                        <outlet property="hintLabel" destination="EzK-Ne-rzX" id="gp5-jy-QRD"/>
+                        <outlet property="letterTextField" destination="4Dt-zH-Q6g" id="7sQ-h7-Sqw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
