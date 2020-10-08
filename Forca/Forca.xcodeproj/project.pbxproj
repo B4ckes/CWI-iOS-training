@@ -17,6 +17,8 @@
 		7035E3E1252D013C0077784A /* ForcaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035E3E0252D013C0077784A /* ForcaUITests.swift */; };
 		7079F301252E9C360033F956 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079F300252E9C360033F956 /* UIViewController+Keyboard.swift */; };
 		70EB2DBC252FABAB001A24EE /* String+AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EB2DBB252FABAB001A24EE /* String+AttributedText.swift */; };
+		70EB2DC6252FB084001A24EE /* ForcaGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EB2DC5252FB084001A24EE /* ForcaGame.swift */; };
+		70EB2DCE252FBAD7001A24EE /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EB2DCD252FBAD7001A24EE /* Functions.swift */; };
 		894F5342A55CFB8C1D4231ED /* Pods_Forca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5967358D3541C6E01AAE98B1 /* Pods_Forca.framework */; };
 		E458DE47BD28935427AD4675 /* Pods_Forca_ForcaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19E1C52B37E4959153F08DC /* Pods_Forca_ForcaUITests.framework */; };
 		E77CBBC89CFB1A2A621C019B /* Pods_ForcaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2D602AEDEC4A2A709CA758 /* Pods_ForcaTests.framework */; };
@@ -59,6 +61,8 @@
 		7035E3E2252D013C0077784A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7079F300252E9C360033F956 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
 		70EB2DBB252FABAB001A24EE /* String+AttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AttributedText.swift"; sourceTree = "<group>"; };
+		70EB2DC5252FB084001A24EE /* ForcaGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcaGame.swift; sourceTree = "<group>"; };
+		70EB2DCD252FBAD7001A24EE /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		8E3681372C8447F3B778DFBE /* Pods-Forca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forca.release.xcconfig"; path = "Target Support Files/Pods-Forca/Pods-Forca.release.xcconfig"; sourceTree = "<group>"; };
 		ADEF60EEA41DE8CE7F0CEE76 /* Pods-Forca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forca.debug.xcconfig"; path = "Target Support Files/Pods-Forca/Pods-Forca.debug.xcconfig"; sourceTree = "<group>"; };
 		AFC63F023CCE5BA825A87B00 /* Pods-Forca-ForcaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forca-ForcaUITests.release.xcconfig"; path = "Target Support Files/Pods-Forca-ForcaUITests/Pods-Forca-ForcaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		7034056C252EA061005D11C9 /* Forca */ = {
 			isa = PBXGroup;
 			children = (
+				70EB2DC4252FB04F001A24EE /* Models */,
 				70EB2DBA252FAB49001A24EE /* Extensions */,
 				7035E3BE252D013B0077784A /* AppDelegate.swift */,
 				7035E3C0252D013B0077784A /* SceneDelegate.swift */,
@@ -178,8 +183,17 @@
 			children = (
 				7079F300252E9C360033F956 /* UIViewController+Keyboard.swift */,
 				70EB2DBB252FABAB001A24EE /* String+AttributedText.swift */,
+				70EB2DCD252FBAD7001A24EE /* Functions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		70EB2DC4252FB04F001A24EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70EB2DC5252FB084001A24EE /* ForcaGame.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,8 +419,10 @@
 				7035E3C3252D013B0077784A /* ViewController.swift in Sources */,
 				7035E3BF252D013B0077784A /* AppDelegate.swift in Sources */,
 				70EB2DBC252FABAB001A24EE /* String+AttributedText.swift in Sources */,
+				70EB2DCE252FBAD7001A24EE /* Functions.swift in Sources */,
 				7035E3C1252D013B0077784A /* SceneDelegate.swift in Sources */,
 				7079F301252E9C360033F956 /* UIViewController+Keyboard.swift in Sources */,
+				70EB2DC6252FB084001A24EE /* ForcaGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

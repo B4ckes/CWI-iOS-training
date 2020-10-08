@@ -78,9 +78,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attemptHistoryLabel" destination="EzK-Ne-rzX" id="gp5-jy-QRD"/>
                         <outlet property="characterImageView" destination="NEl-tx-Mia" id="Xm6-O9-5bB"/>
-                        <outlet property="hintLabel" destination="EzK-Ne-rzX" id="gp5-jy-QRD"/>
+                        <outlet property="hintLabel" destination="ef3-oX-INn" id="S9D-rR-v2E"/>
                         <outlet property="letterTextField" destination="4Dt-zH-Q6g" id="7sQ-h7-Sqw"/>
+                        <outlet property="maskedWordlabel" destination="BFG-Si-ZFL" id="Mtf-no-La8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
