@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7035E3BF252D013B0077784A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035E3BE252D013B0077784A /* AppDelegate.swift */; };
+		7035E3C1252D013B0077784A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035E3C0252D013B0077784A /* SceneDelegate.swift */; };
+		7035E3C3252D013B0077784A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035E3C2252D013B0077784A /* ViewController.swift */; };
+		7035E3C6252D013B0077784A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7035E3C4252D013B0077784A /* Main.storyboard */; };
+		7035E3C8252D013B0077784A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7035E3C7252D013B0077784A /* Assets.xcassets */; };
+		7035E3CB252D013B0077784A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7035E3C9252D013B0077784A /* LaunchScreen.storyboard */; };
+		7035E3D6252D013C0077784A /* ForcaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035E3D5252D013C0077784A /* ForcaTests.swift */; };
+		7035E3E1252D013C0077784A /* ForcaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035E3E0252D013C0077784A /* ForcaUITests.swift */; };
+		7079F301252E9C360033F956 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079F300252E9C360033F956 /* UIViewController+Keyboard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7035E3D2252D013C0077784A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7035E3B3252D013B0077784A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7035E3BA252D013B0077784A;
+			remoteInfo = Forca;
+		};
+		7035E3DD252D013C0077784A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7035E3B3252D013B0077784A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7035E3BA252D013B0077784A;
+			remoteInfo = Forca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7035E3BB252D013B0077784A /* Forca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7035E3BE252D013B0077784A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7035E3C0252D013B0077784A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7035E3C2252D013B0077784A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7035E3C5252D013B0077784A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7035E3C7252D013B0077784A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7035E3CA252D013B0077784A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7035E3CC252D013B0077784A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7035E3D1252D013C0077784A /* ForcaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForcaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7035E3D5252D013C0077784A /* ForcaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcaTests.swift; sourceTree = "<group>"; };
+		7035E3D7252D013C0077784A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7035E3DC252D013C0077784A /* ForcaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForcaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7035E3E0252D013C0077784A /* ForcaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcaUITests.swift; sourceTree = "<group>"; };
+		7035E3E2252D013C0077784A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7079F300252E9C360033F956 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7035E3B8252D013B0077784A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035E3CE252D013C0077784A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035E3D9252D013C0077784A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7034056C252EA061005D11C9 /* Forca */ = {
+			isa = PBXGroup;
+			children = (
+				7035E3BE252D013B0077784A /* AppDelegate.swift */,
+				7035E3C0252D013B0077784A /* SceneDelegate.swift */,
+				7035E3C2252D013B0077784A /* ViewController.swift */,
+				7035E3C4252D013B0077784A /* Main.storyboard */,
+				7035E3C7252D013B0077784A /* Assets.xcassets */,
+				7035E3C9252D013B0077784A /* LaunchScreen.storyboard */,
+				7035E3CC252D013B0077784A /* Info.plist */,
+				7079F300252E9C360033F956 /* UIViewController+Keyboard.swift */,
+			);
+			path = Forca;
+			sourceTree = "<group>";
+		};
+		7035E3B2252D013B0077784A = {
+			isa = PBXGroup;
+			children = (
+				7034056C252EA061005D11C9 /* Forca */,
+				7035E3D4252D013C0077784A /* ForcaTests */,
+				7035E3DF252D013C0077784A /* ForcaUITests */,
+				7035E3BC252D013B0077784A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7035E3BC252D013B0077784A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7035E3BB252D013B0077784A /* Forca.app */,
+				7035E3D1252D013C0077784A /* ForcaTests.xctest */,
+				7035E3DC252D013C0077784A /* ForcaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7035E3D4252D013C0077784A /* ForcaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7035E3D5252D013C0077784A /* ForcaTests.swift */,
+				7035E3D7252D013C0077784A /* Info.plist */,
+			);
+			path = ForcaTests;
+			sourceTree = "<group>";
+		};
+		7035E3DF252D013C0077784A /* ForcaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7035E3E0252D013C0077784A /* ForcaUITests.swift */,
+				7035E3E2252D013C0077784A /* Info.plist */,
+			);
+			path = ForcaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7035E3BA252D013B0077784A /* Forca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7035E3E5252D013C0077784A /* Build configuration list for PBXNativeTarget "Forca" */;
+			buildPhases = (
+				7035E3B7252D013B0077784A /* Sources */,
+				7035E3B8252D013B0077784A /* Frameworks */,
+				7035E3B9252D013B0077784A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Forca;
+			productName = Forca;
+			productReference = 7035E3BB252D013B0077784A /* Forca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7035E3D0252D013C0077784A /* ForcaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7035E3E8252D013C0077784A /* Build configuration list for PBXNativeTarget "ForcaTests" */;
+			buildPhases = (
+				7035E3CD252D013C0077784A /* Sources */,
+				7035E3CE252D013C0077784A /* Frameworks */,
+				7035E3CF252D013C0077784A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7035E3D3252D013C0077784A /* PBXTargetDependency */,
+			);
+			name = ForcaTests;
+			productName = ForcaTests;
+			productReference = 7035E3D1252D013C0077784A /* ForcaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7035E3DB252D013C0077784A /* ForcaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7035E3EB252D013C0077784A /* Build configuration list for PBXNativeTarget "ForcaUITests" */;
+			buildPhases = (
+				7035E3D8252D013C0077784A /* Sources */,
+				7035E3D9252D013C0077784A /* Frameworks */,
+				7035E3DA252D013C0077784A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7035E3DE252D013C0077784A /* PBXTargetDependency */,
+			);
+			name = ForcaUITests;
+			productName = ForcaUITests;
+			productReference = 7035E3DC252D013C0077784A /* ForcaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7035E3B3252D013B0077784A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					7035E3BA252D013B0077784A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					7035E3D0252D013C0077784A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7035E3BA252D013B0077784A;
+					};
+					7035E3DB252D013C0077784A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7035E3BA252D013B0077784A;
+					};
+				};
+			};
+			buildConfigurationList = 7035E3B6252D013B0077784A /* Build configuration list for PBXProject "Forca" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7035E3B2252D013B0077784A;
+			productRefGroup = 7035E3BC252D013B0077784A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7035E3BA252D013B0077784A /* Forca */,
+				7035E3D0252D013C0077784A /* ForcaTests */,
+				7035E3DB252D013C0077784A /* ForcaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7035E3B9252D013B0077784A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035E3CB252D013B0077784A /* LaunchScreen.storyboard in Resources */,
+				7035E3C8252D013B0077784A /* Assets.xcassets in Resources */,
+				7035E3C6252D013B0077784A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035E3CF252D013C0077784A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035E3DA252D013C0077784A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7035E3B7252D013B0077784A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035E3C3252D013B0077784A /* ViewController.swift in Sources */,
+				7035E3BF252D013B0077784A /* AppDelegate.swift in Sources */,
+				7035E3C1252D013B0077784A /* SceneDelegate.swift in Sources */,
+				7079F301252E9C360033F956 /* UIViewController+Keyboard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035E3CD252D013C0077784A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035E3D6252D013C0077784A /* ForcaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035E3D8252D013C0077784A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035E3E1252D013C0077784A /* ForcaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7035E3D3252D013C0077784A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7035E3BA252D013B0077784A /* Forca */;
+			targetProxy = 7035E3D2252D013C0077784A /* PBXContainerItemProxy */;
+		};
+		7035E3DE252D013C0077784A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7035E3BA252D013B0077784A /* Forca */;
+			targetProxy = 7035E3DD252D013C0077784A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7035E3C4252D013B0077784A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7035E3C5252D013B0077784A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7035E3C9252D013B0077784A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7035E3CA252D013B0077784A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7035E3E3252D013C0077784A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7035E3E4252D013C0077784A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7035E3E6252D013C0077784A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86972DN3J;
+				INFOPLIST_FILE = Forca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cwi.treinamento.backes.Forca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7035E3E7252D013C0077784A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86972DN3J;
+				INFOPLIST_FILE = Forca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cwi.treinamento.backes.Forca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7035E3E9252D013C0077784A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86972DN3J;
+				INFOPLIST_FILE = ForcaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cwi.treinamento.backes.ForcaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forca.app/Forca";
+			};
+			name = Debug;
+		};
+		7035E3EA252D013C0077784A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86972DN3J;
+				INFOPLIST_FILE = ForcaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cwi.treinamento.backes.ForcaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forca.app/Forca";
+			};
+			name = Release;
+		};
+		7035E3EC252D013C0077784A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86972DN3J;
+				INFOPLIST_FILE = ForcaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cwi.treinamento.backes.ForcaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Forca;
+			};
+			name = Debug;
+		};
+		7035E3ED252D013C0077784A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86972DN3J;
+				INFOPLIST_FILE = ForcaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cwi.treinamento.backes.ForcaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Forca;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7035E3B6252D013B0077784A /* Build configuration list for PBXProject "Forca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7035E3E3252D013C0077784A /* Debug */,
+				7035E3E4252D013C0077784A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7035E3E5252D013C0077784A /* Build configuration list for PBXNativeTarget "Forca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7035E3E6252D013C0077784A /* Debug */,
+				7035E3E7252D013C0077784A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7035E3E8252D013C0077784A /* Build configuration list for PBXNativeTarget "ForcaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7035E3E9252D013C0077784A /* Debug */,
+				7035E3EA252D013C0077784A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7035E3EB252D013C0077784A /* Build configuration list for PBXNativeTarget "ForcaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7035E3EC252D013C0077784A /* Debug */,
+				7035E3ED252D013C0077784A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7035E3B3252D013B0077784A /* Project object */;
+}
