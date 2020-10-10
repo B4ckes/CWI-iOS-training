@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var game: ForcaGame = ForcaGame(word: "DESNATADO", hint: "Emilio")
+    var game: ForcaGame = ForcaGame.random()
     
     
     @IBOutlet weak var characterImageView: UIImageView!
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var attemptHistoryLabel: UILabel!
     
     @IBAction func onRestartButtonPress(_ sender: Any) {
-        // Restart game
+        newGame()
      }
     
     @IBAction func onEditingDone(_ sender: Any) {
@@ -40,11 +40,58 @@ class ViewController: UIViewController {
 }
 
 extension ViewController {
+    private func attemptHistoryFormatter() -> NSAttributedString {
+        game.attemptHistory.reduce(NSMutableAttributedString()) { (text, char) in
+            if game.word.contains(char) {
+                text.append(char.greenColor)
+            } else {
+                text.append(char.redColor)
+            }
+            
+            return text
+        }.spaced
+    }
+
     private func refreshScreen() {
         hintLabel.text = "A dica é: \(game.hint)"
         maskedWordlabel.attributedText = game.maskedWord.spaced
-        attemptHistoryLabel.attributedText = game.attemptHistory.joined().spaced
+        attemptHistoryLabel.attributedText = attemptHistoryFormatter()
+        letterTextField.text = ""
         refreshImage()
+        
+        if game.hasLost {
+            warnLoser()
+        } else if game.hasWinned {
+            warnWinner()
+        }
+    }
+    
+    private func newGame() {
+        game = ForcaGame.random()
+        refreshScreen()
+    }
+    
+    var action: UIAlertAction {UIAlertAction(title: "Jogar novamente", style: .default) { _ in
+        self.newGame()
+    }}
+    
+    private func warnLoser() {
+        let alert = UIAlertController(
+            title: "Que pena, você errou",
+            message: "Pensa um pouco mais da próxima vez",
+            preferredStyle: .alert)
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func warnWinner() {
+        let alert = UIAlertController(
+            title: "Ma ôe!",
+            message: "Você acertou, parabéns!",
+            preferredStyle: .alert)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
     
     private func refreshImage() {
@@ -68,5 +115,22 @@ extension ViewController {
                 self.characterImageView.image = image
             },
             completion: nil)
+    }
+}
+
+let words = [
+    "abelha": "inseto",
+    "formiga": "inseto",
+    "macaco": "animal",
+    "cabra": "animal",
+]
+
+extension ForcaGame {
+    class func random() -> ForcaGame {
+        guard let item = words.randomElement() else {
+            return ForcaGame(word: "Desnatado", hint: "Microfone")
+        }
+        
+        return ForcaGame(word: item.key, hint: item.value)
     }
 }

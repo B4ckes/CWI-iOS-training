@@ -15,6 +15,9 @@
 		7035E3CB252D013B0077784A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7035E3C9252D013B0077784A /* LaunchScreen.storyboard */; };
 		7035E3D6252D013C0077784A /* ForcaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035E3D5252D013C0077784A /* ForcaTests.swift */; };
 		7035E3E1252D013C0077784A /* ForcaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035E3E0252D013C0077784A /* ForcaUITests.swift */; };
+		706985132531DBFF001953F5 /* ForcaGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706985122531DBFF001953F5 /* ForcaGameTests.swift */; };
+		706985182531DE96001953F5 /* String+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706985172531DE96001953F5 /* String+Comparable.swift */; };
+		7069851D2531DF5D001953F5 /* Character+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7069851C2531DF5D001953F5 /* Character+Comparable.swift */; };
 		7079F301252E9C360033F956 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079F300252E9C360033F956 /* UIViewController+Keyboard.swift */; };
 		70EB2DBC252FABAB001A24EE /* String+AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EB2DBB252FABAB001A24EE /* String+AttributedText.swift */; };
 		70EB2DC6252FB084001A24EE /* ForcaGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EB2DC5252FB084001A24EE /* ForcaGame.swift */; };
@@ -59,6 +62,9 @@
 		7035E3DC252D013C0077784A /* ForcaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForcaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7035E3E0252D013C0077784A /* ForcaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcaUITests.swift; sourceTree = "<group>"; };
 		7035E3E2252D013C0077784A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706985122531DBFF001953F5 /* ForcaGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcaGameTests.swift; sourceTree = "<group>"; };
+		706985172531DE96001953F5 /* String+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Comparable.swift"; sourceTree = "<group>"; };
+		7069851C2531DF5D001953F5 /* Character+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Comparable.swift"; sourceTree = "<group>"; };
 		7079F300252E9C360033F956 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
 		70EB2DBB252FABAB001A24EE /* String+AttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AttributedText.swift"; sourceTree = "<group>"; };
 		70EB2DC5252FB084001A24EE /* ForcaGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcaGame.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 				7035E3BE252D013B0077784A /* AppDelegate.swift */,
 				7035E3C0252D013B0077784A /* SceneDelegate.swift */,
 				7035E3C2252D013B0077784A /* ViewController.swift */,
+				70EB2DCD252FBAD7001A24EE /* Functions.swift */,
 				7035E3C4252D013B0077784A /* Main.storyboard */,
 				7035E3C7252D013B0077784A /* Assets.xcassets */,
 				7035E3C9252D013B0077784A /* LaunchScreen.storyboard */,
@@ -165,6 +172,7 @@
 			children = (
 				7035E3D5252D013C0077784A /* ForcaTests.swift */,
 				7035E3D7252D013C0077784A /* Info.plist */,
+				706985122531DBFF001953F5 /* ForcaGameTests.swift */,
 			);
 			path = ForcaTests;
 			sourceTree = "<group>";
@@ -183,7 +191,8 @@
 			children = (
 				7079F300252E9C360033F956 /* UIViewController+Keyboard.swift */,
 				70EB2DBB252FABAB001A24EE /* String+AttributedText.swift */,
-				70EB2DCD252FBAD7001A24EE /* Functions.swift */,
+				706985172531DE96001953F5 /* String+Comparable.swift */,
+				7069851C2531DF5D001953F5 /* Character+Comparable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -418,11 +427,13 @@
 			files = (
 				7035E3C3252D013B0077784A /* ViewController.swift in Sources */,
 				7035E3BF252D013B0077784A /* AppDelegate.swift in Sources */,
+				706985182531DE96001953F5 /* String+Comparable.swift in Sources */,
 				70EB2DBC252FABAB001A24EE /* String+AttributedText.swift in Sources */,
 				70EB2DCE252FBAD7001A24EE /* Functions.swift in Sources */,
 				7035E3C1252D013B0077784A /* SceneDelegate.swift in Sources */,
 				7079F301252E9C360033F956 /* UIViewController+Keyboard.swift in Sources */,
 				70EB2DC6252FB084001A24EE /* ForcaGame.swift in Sources */,
+				7069851D2531DF5D001953F5 /* Character+Comparable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7035E3D6252D013C0077784A /* ForcaTests.swift in Sources */,
+				706985132531DBFF001953F5 /* ForcaGameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

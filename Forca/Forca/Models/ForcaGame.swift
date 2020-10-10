@@ -26,24 +26,30 @@ class ForcaGame {
     }
     
     internal init(word: String, hint: String) {
-        self.word = word
+        self.word = word.comparable
         self.hint = hint
         self.maskedWord = word.map { _ in "_" }.joined()
     }
     
     func attempt(char: String) {
-        if attemptHistory.contains(char) {
+        guard let informedChar = char.first?.comparable else { return }
+        
+        if attemptHistory.contains(informedChar) {
             return
         }
         
-        attemptHistory.append(char)
+        attemptHistory.append(informedChar)
         
-        guard word.contains(char) else {
+        guard word.contains(informedChar) else {
             missedAttempts += 1
 
             return
         }
         
-        maskedWord = replaceChar(char, on: maskedWord, with: word)
+        maskedWord = replaceChar(informedChar, on: maskedWord, with: word)
+        
+        if word == maskedWord {
+            hasWinned = true
+        }
     }
 }
