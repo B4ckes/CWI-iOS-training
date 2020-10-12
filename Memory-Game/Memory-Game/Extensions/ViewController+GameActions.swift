@@ -17,12 +17,33 @@ extension ViewController {
 
             disableButton(buttonOutlet)
 
-            verifyWrongPairs()
+            verifyCards()
         }
     }
     
     func restartGame() {
         resetCards()
         currentGame = GameController()
+    }
+    
+    func verifyVictory() {
+        if currentGame.hasWinned {
+            victoryAlert()
+        }
+    }
+    
+    func victoryAlert() {
+        var action: UIAlertAction {UIAlertAction(title: "Bacana, bora de novo", style: .default) {_ in
+            self.restartGame()
+        }}
+        
+        let alert = UIAlertController(
+            title: "Boa, você terminou!",
+            message: "Você precisou de \(currentGame.totalAttempts) tentativas para finalizar o jogo da memória.",
+            preferredStyle: .alert)
+        
+        alert.addAction(action)
+
+        present(alert, animated: true, completion: nil)
     }
 }

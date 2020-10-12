@@ -37,8 +37,12 @@ extension ViewController {
         } else if flippedCards.count == maxFlippedCards {
             flippedCards = []
         }
-        
         isAbleToPlay = true
+    }
+    
+    func verifyCards() {
+        verifyWrongPairs()
+        verifyVictory()
     }
     
     func resetCards() {
