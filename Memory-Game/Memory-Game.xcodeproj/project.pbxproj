@@ -15,6 +15,10 @@
 		702A5BF52531FD1200E4D177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702A5BF32531FD1200E4D177 /* LaunchScreen.storyboard */; };
 		702A5C002531FD1200E4D177 /* Memory_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702A5BFF2531FD1200E4D177 /* Memory_GameTests.swift */; };
 		702A5C0B2531FD1200E4D177 /* Memory_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702A5C0A2531FD1200E4D177 /* Memory_GameUITests.swift */; };
+		708EBB7E2533F1AD006F6816 /* ViewController+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708EBB7D2533F1AD006F6816 /* ViewController+Button.swift */; };
+		708EBB832533F5F3006F6816 /* ViewController+Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708EBB822533F5F3006F6816 /* ViewController+Cards.swift */; };
+		708EBB8B2533F8F3006F6816 /* ViewController+GameActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708EBB8A2533F8F3006F6816 /* ViewController+GameActions.swift */; };
+		70C990962533C5C900B89828 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C990952533C5C900B89828 /* GameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		702A5C062531FD1200E4D177 /* Memory-GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memory-GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		702A5C0A2531FD1200E4D177 /* Memory_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory_GameUITests.swift; sourceTree = "<group>"; };
 		702A5C0C2531FD1200E4D177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		708EBB7D2533F1AD006F6816 /* ViewController+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Button.swift"; sourceTree = "<group>"; };
+		708EBB822533F5F3006F6816 /* ViewController+Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Cards.swift"; sourceTree = "<group>"; };
+		708EBB8A2533F8F3006F6816 /* ViewController+GameActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+GameActions.swift"; sourceTree = "<group>"; };
+		70C990952533C5C900B89828 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		702A5BE72531FD1100E4D177 /* Memory-Game */ = {
 			isa = PBXGroup;
 			children = (
+				708EBB7C2533F0F9006F6816 /* Extensions */,
+				70C9909A2533C60800B89828 /* Models */,
 				702A5BE82531FD1100E4D177 /* AppDelegate.swift */,
 				702A5BEA2531FD1100E4D177 /* SceneDelegate.swift */,
 				702A5BEC2531FD1100E4D177 /* ViewController.swift */,
@@ -126,6 +136,24 @@
 				702A5C0C2531FD1200E4D177 /* Info.plist */,
 			);
 			path = "Memory-GameUITests";
+			sourceTree = "<group>";
+		};
+		708EBB7C2533F0F9006F6816 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				708EBB7D2533F1AD006F6816 /* ViewController+Button.swift */,
+				708EBB822533F5F3006F6816 /* ViewController+Cards.swift */,
+				708EBB8A2533F8F3006F6816 /* ViewController+GameActions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		70C9909A2533C60800B89828 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70C990952533C5C900B89828 /* GameController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				702A5BED2531FD1100E4D177 /* ViewController.swift in Sources */,
+				708EBB8B2533F8F3006F6816 /* ViewController+GameActions.swift in Sources */,
+				708EBB7E2533F1AD006F6816 /* ViewController+Button.swift in Sources */,
+				70C990962533C5C900B89828 /* GameController.swift in Sources */,
+				708EBB832533F5F3006F6816 /* ViewController+Cards.swift in Sources */,
 				702A5BE92531FD1100E4D177 /* AppDelegate.swift in Sources */,
 				702A5BEB2531FD1100E4D177 /* SceneDelegate.swift in Sources */,
 			);
@@ -446,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.treinamento.backes.Memory-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.treinamento.backes.Memory-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
