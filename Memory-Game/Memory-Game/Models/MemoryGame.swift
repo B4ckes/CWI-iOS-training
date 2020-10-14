@@ -7,23 +7,12 @@
 
 import UIKit
 
-class GameController {
+class MemoryGame {
     var totalAttempts: Int
     var firstAttemptCard: String
     var shouldUnflipCards: Bool
      
-    private(set) var cards: [String] = [
-        "Dwarf",
-        "Elv",
-        "Knight",
-        "Witch",
-        "Wizard",
-        "Dwarf",
-        "Elv",
-        "Knight",
-        "Witch",
-        "Wizard",
-    ]
+    private(set) var cards: [String]
     private(set) var hasWinned: Bool = false
     private(set) var pairsFound: [String] = [] {
         didSet {
@@ -33,13 +22,12 @@ class GameController {
         }
     }
     
-    internal init() {
+    internal init(shuffledCards: [String]) {
         self.totalAttempts = 0
         self.pairsFound = []
         self.firstAttemptCard = ""
         self.shouldUnflipCards = false
-        
-        self.cards.shuffle()
+        self.cards = shuffledCards
     }
     
     func attempt(cardName card: String, button cardButton: UIButton) {

@@ -7,9 +7,22 @@
 
 import UIKit
 
+let gameCards: [String] = [
+    "Dwarf",
+    "Elv",
+    "Knight",
+    "Witch",
+    "Wizard",
+    "Dwarf",
+    "Elv",
+    "Knight",
+    "Witch",
+    "Wizard",
+]
+
 class ViewController: UIViewController {
-    
-    var currentGame: GameController = GameController()
+    var currentGame: MemoryGame = MemoryGame(shuffledCards: gameCards.shuffled())
+
     var flippedCards: [UIButton] = []
     var isAbleToPlay: Bool = true
 
@@ -31,8 +44,6 @@ class ViewController: UIViewController {
 
     @IBAction func onRestartPress(_ sender: Any) {
         restartGame()
-        print("teste")
-        print(currentGame.cards)
     }
 
     @IBAction func onButton0Touch(_ sender: Any) {

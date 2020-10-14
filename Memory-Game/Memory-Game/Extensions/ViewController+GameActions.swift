@@ -21,9 +21,13 @@ extension ViewController {
         }
     }
     
+    func newGame() {
+        currentGame = MemoryGame(shuffledCards: gameCards.shuffled())
+    }
+    
     func restartGame() {
         resetCards()
-        currentGame = GameController()
+        newGame()
     }
     
     func verifyVictory() {
