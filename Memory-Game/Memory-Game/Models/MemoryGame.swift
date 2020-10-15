@@ -8,7 +8,11 @@
 import UIKit
 
 class MemoryGame {
-    var totalAttempts: Int
+    var totalAttempts: Int = 0 {
+        didSet {
+            print(totalAttempts)
+        }
+    }
     var firstAttemptCard: String
     var shouldUnflipCards: Bool
      
@@ -30,20 +34,19 @@ class MemoryGame {
         self.cards = shuffledCards
     }
     
-    func attempt(cardName card: String, button cardButton: UIButton) {
+    func attempt(cardName card: String) {
         if firstAttemptCard == "" {
             firstAttemptCard = card
             return
         }
         
         if firstAttemptCard == card {
-            totalAttempts += 1
             pairsFound.append(card)
-            firstAttemptCard = ""
         } else {
-            totalAttempts += 1
-            firstAttemptCard = ""
             shouldUnflipCards = true
         }
+
+        firstAttemptCard = ""
+        totalAttempts += 1
     }
 }

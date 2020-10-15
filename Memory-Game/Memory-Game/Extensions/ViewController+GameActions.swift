@@ -10,7 +10,7 @@ import UIKit
 extension ViewController {
     func attempt(cardName card: String, button buttonOutlet: UIButton) {
         if !currentGame.pairsFound.contains(card) && isAbleToPlay {
-            currentGame.attempt(cardName: card, button: buttonOutlet)
+            currentGame.attempt(cardName: card)
 
             flipCard(button: buttonOutlet, image: card)
             flippedCards.append(buttonOutlet)
