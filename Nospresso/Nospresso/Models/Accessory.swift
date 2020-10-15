@@ -7,7 +7,17 @@
 
 import Foundation
 
-struct Accessory: Decodable {
+public struct Accessory: Decodable {
+    let category: String
+    let items: [AccessoryItem]
+    
+    enum CodingKeys: String, CodingKey {
+        case category = "categoria"
+        case items = "itens"
+    }
+}
+
+struct AccessoryItem: Decodable {
     let id: Int
     let name: String
     let price: Double
@@ -20,15 +30,5 @@ struct Accessory: Decodable {
         case price = "preco"
         case image = "imagem"
         case description = "descricao"
-    }
-}
-
-public struct AccessoryCategory: Decodable {
-    let category: String
-    let items: [Accessory]
-    
-    enum CodingKeys: String, CodingKey {
-        case category = "categoria"
-        case items = "itens"
     }
 }

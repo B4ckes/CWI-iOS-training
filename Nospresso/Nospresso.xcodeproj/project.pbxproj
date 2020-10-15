@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		53E835D56C94415CD532A733 /* Pods_Nospresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E9146E8ABB6A12BFCF8716 /* Pods_Nospresso.framework */; };
+		70798B062538EC7800535BF0 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFC2538EC7700535BF0 /* OpenSans-BoldItalic.ttf */; };
+		70798B072538EC7800535BF0 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFD2538EC7700535BF0 /* OpenSans-ExtraBoldItalic.ttf */; };
+		70798B082538EC7800535BF0 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFE2538EC7700535BF0 /* OpenSans-LightItalic.ttf */; };
+		70798B092538EC7800535BF0 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFF2538EC7700535BF0 /* OpenSans-Regular.ttf */; };
+		70798B0A2538EC7800535BF0 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798B002538EC7700535BF0 /* OpenSans-SemiBoldItalic.ttf */; };
+		70798B0B2538EC7800535BF0 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798B012538EC7700535BF0 /* OpenSans-Italic.ttf */; };
+		70798B0C2538EC7800535BF0 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798B022538EC7700535BF0 /* OpenSans-Bold.ttf */; };
+		70798B0D2538EC7800535BF0 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798B032538EC7700535BF0 /* OpenSans-SemiBold.ttf */; };
+		70798B0E2538EC7800535BF0 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798B042538EC7800535BF0 /* OpenSans-Light.ttf */; };
+		70798B0F2538EC7800535BF0 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798B052538EC7800535BF0 /* OpenSans-ExtraBold.ttf */; };
+		70798B162538F4B600535BF0 /* CoffeesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70798B152538F4B600535BF0 /* CoffeesTableViewController.swift */; };
+		70798B1E2538FAA400535BF0 /* CoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70798B1D2538FAA400535BF0 /* CoffeeTableViewCell.swift */; };
 		7097BC76253639C200F33603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BC75253639C200F33603 /* AppDelegate.swift */; };
 		7097BC78253639C200F33603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BC77253639C200F33603 /* SceneDelegate.swift */; };
 		7097BC7A253639C200F33603 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BC79253639C200F33603 /* ViewController.swift */; };
@@ -47,6 +59,18 @@
 		00EFEB5D9C98C6FE7693295E /* Pods-Nospresso-NospressoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso-NospressoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		26C81F69FF619D19EF4CFB38 /* Pods-Nospresso-NospressoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso-NospressoUITests.release.xcconfig"; path = "Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2F33CE703A58CDCE10EB7FC8 /* Pods-NospressoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NospressoTests.release.xcconfig"; path = "Target Support Files/Pods-NospressoTests/Pods-NospressoTests.release.xcconfig"; sourceTree = "<group>"; };
+		70798AFC2538EC7700535BF0 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		70798AFD2538EC7700535BF0 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		70798AFE2538EC7700535BF0 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		70798AFF2538EC7700535BF0 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		70798B002538EC7700535BF0 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		70798B012538EC7700535BF0 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		70798B022538EC7700535BF0 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		70798B032538EC7700535BF0 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		70798B042538EC7800535BF0 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		70798B052538EC7800535BF0 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		70798B152538F4B600535BF0 /* CoffeesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeesTableViewController.swift; sourceTree = "<group>"; };
+		70798B1D2538FAA400535BF0 /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = "<group>"; };
 		7097BC72253639C200F33603 /* Nospresso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nospresso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7097BC75253639C200F33603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7097BC77253639C200F33603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +127,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70798AFA2538EB6D00535BF0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				70798AFB2538EBAC00535BF0 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		70798AFB2538EBAC00535BF0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				70798B022538EC7700535BF0 /* OpenSans-Bold.ttf */,
+				70798AFC2538EC7700535BF0 /* OpenSans-BoldItalic.ttf */,
+				70798B052538EC7800535BF0 /* OpenSans-ExtraBold.ttf */,
+				70798AFD2538EC7700535BF0 /* OpenSans-ExtraBoldItalic.ttf */,
+				70798B012538EC7700535BF0 /* OpenSans-Italic.ttf */,
+				70798B042538EC7800535BF0 /* OpenSans-Light.ttf */,
+				70798AFE2538EC7700535BF0 /* OpenSans-LightItalic.ttf */,
+				70798AFF2538EC7700535BF0 /* OpenSans-Regular.ttf */,
+				70798B032538EC7700535BF0 /* OpenSans-SemiBold.ttf */,
+				70798B002538EC7700535BF0 /* OpenSans-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		70798B132538F48C00535BF0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				70798B142538F49700535BF0 /* Coffees */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		70798B142538F49700535BF0 /* Coffees */ = {
+			isa = PBXGroup;
+			children = (
+				70798B152538F4B600535BF0 /* CoffeesTableViewController.swift */,
+				70798B1D2538FAA400535BF0 /* CoffeeTableViewCell.swift */,
+			);
+			path = Coffees;
+			sourceTree = "<group>";
+		};
 		7097BC69253639C200F33603 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +194,8 @@
 		7097BC74253639C200F33603 /* Nospresso */ = {
 			isa = PBXGroup;
 			children = (
+				70798B132538F48C00535BF0 /* Modules */,
+				70798AFA2538EB6D00535BF0 /* Assets */,
 				7097BCC9253659F900F33603 /* Api */,
 				7097BCB12536590D00F33603 /* Models */,
 				7097BC75253639C200F33603 /* AppDelegate.swift */,
@@ -308,9 +376,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70798B0B2538EC7800535BF0 /* OpenSans-Italic.ttf in Resources */,
+				70798B0A2538EC7800535BF0 /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				70798B0D2538EC7800535BF0 /* OpenSans-SemiBold.ttf in Resources */,
 				7097BC82253639C300F33603 /* LaunchScreen.storyboard in Resources */,
 				7097BC7F253639C300F33603 /* Assets.xcassets in Resources */,
+				70798B082538EC7800535BF0 /* OpenSans-LightItalic.ttf in Resources */,
+				70798B0E2538EC7800535BF0 /* OpenSans-Light.ttf in Resources */,
+				70798B092538EC7800535BF0 /* OpenSans-Regular.ttf in Resources */,
+				70798B072538EC7800535BF0 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				70798B062538EC7800535BF0 /* OpenSans-BoldItalic.ttf in Resources */,
+				70798B0C2538EC7800535BF0 /* OpenSans-Bold.ttf in Resources */,
 				7097BC7D253639C200F33603 /* Main.storyboard in Resources */,
+				70798B0F2538EC7800535BF0 /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70798B162538F4B600535BF0 /* CoffeesTableViewController.swift in Sources */,
 				7097BC7A253639C200F33603 /* ViewController.swift in Sources */,
 				7097BCD325365A5800F33603 /* Endpoint.swift in Sources */,
 				7097BCB32536592B00F33603 /* Capsule.swift in Sources */,
@@ -412,6 +491,7 @@
 				7097BCBB2536595E00F33603 /* Coffee.swift in Sources */,
 				7097BCC0253659BF00F33603 /* Machine.swift in Sources */,
 				7097BCCB25365A0200F33603 /* Api.swift in Sources */,
+				70798B1E2538FAA400535BF0 /* CoffeeTableViewCell.swift in Sources */,
 				7097BCC5253659EB00F33603 /* Accessory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
