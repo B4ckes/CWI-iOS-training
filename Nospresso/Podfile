@@ -4,12 +4,16 @@
 target 'Nospresso' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'R.swift'
+  pod 'Nuke'
 
   # Pods for Nospresso
 
   target 'NospressoTests' do
     inherit! :search_paths
     # Pods for testing
+    'Quick'
+    'Nimble'
   end
 
   target 'NospressoUITests' do

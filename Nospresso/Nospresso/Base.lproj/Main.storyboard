@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,6 +13,9 @@
         <array key="OpenSans-Bold.ttf">
             <string>OpenSans-Bold</string>
         </array>
+        <array key="OpenSans-Italic.ttf">
+            <string>OpenSans-Italic</string>
+        </array>
         <array key="OpenSans-Light.ttf">
             <string>OpenSans-Light</string>
         </array>
@@ -20,10 +24,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Navbar Products View Controller-->
         <scene sceneID="8By-2V-2vy">
             <objects>
-                <viewController id="m6v-C8-J8a" sceneMemberID="viewController">
+                <viewController id="m6v-C8-J8a" customClass="NavbarProductsViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Q8-di-nEr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,16 +39,16 @@
                                         <rect key="frame" x="278" y="78.5" width="136" height="136"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jem-dM-AYa">
-                                        <rect key="frame" x="26" y="168.5" width="183" height="63"/>
+                                        <rect key="frame" x="26" y="176.5" width="184" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafés" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-gV-2pd">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="30.5"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
                                                 <color key="textColor" name="DarkText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cremosos, espumosos, hmm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTt-eJ-l8W">
-                                                <rect key="frame" x="0.0" y="43.5" width="183" height="19.5"/>
+                                                <rect key="frame" x="0.0" y="38.5" width="184" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
                                                 <color key="textColor" name="DarkText"/>
                                                 <nil key="highlightedColor"/>
@@ -71,16 +75,16 @@
                                         <rect key="frame" x="294" y="73" width="120" height="146"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="28o-FK-DmM">
-                                        <rect key="frame" x="26" y="168" width="141.5" height="63"/>
+                                        <rect key="frame" x="26" y="176" width="142.5" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máquinas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyf-Cx-uJy">
-                                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="30.5"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
                                                 <color key="textColor" name="DarkText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sem elas não rola café" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stv-SO-3aQ">
-                                                <rect key="frame" x="0.0" y="43.5" width="141.5" height="19.5"/>
+                                                <rect key="frame" x="0.0" y="38.5" width="142.5" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
                                                 <color key="textColor" name="DarkText"/>
                                                 <nil key="highlightedColor"/>
@@ -103,16 +107,16 @@
                                         <rect key="frame" x="268" y="55" width="146" height="147"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7mU-V9-2f2">
-                                        <rect key="frame" x="26" y="168.5" width="144" height="63"/>
+                                        <rect key="frame" x="26" y="176.5" width="145" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acessórios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooc-Md-Hfd">
-                                                <rect key="frame" x="0.0" y="0.0" width="137.5" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="128.5" height="30.5"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
                                                 <color key="textColor" name="DarkText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pra completar a balaca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZl-sv-LQW">
-                                                <rect key="frame" x="0.0" y="43.5" width="144" height="19.5"/>
+                                                <rect key="frame" x="0.0" y="38.5" width="145" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
                                                 <color key="textColor" name="DarkText"/>
                                                 <nil key="highlightedColor"/>
@@ -157,7 +161,7 @@
             </objects>
             <point key="canvasLocation" x="126.08695652173914" y="-96.428571428571431"/>
         </scene>
-        <!--Coffees Table View Controller-->
+        <!--Cafés-->
         <scene sceneID="iUL-4R-aIX">
             <objects>
                 <tableViewController id="f7w-Hf-SPk" customClass="CoffeesTableViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,38 +170,86 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coffeeCell" rowHeight="100" id="uOW-32-Zyj" customClass="CoffeeTableViewCell" customModule="Nospresso" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="coffeeCell" rowHeight="100" id="uOW-32-Zyj" customClass="CoffeeTableViewCell" customModule="Nospresso" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uOW-32-Zyj" id="YSf-K1-X3g">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeAccessories" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-ra-Yfy">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeAccessories" translatesAutoresizingMaskIntoConstraints="NO" id="nCa-Ad-r6I">
                                             <rect key="frame" x="18" y="25" width="50" height="50"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="LW4-EE-TeF"/>
-                                                <constraint firstAttribute="height" constant="50" id="hNy-HQ-sUV"/>
+                                                <constraint firstAttribute="height" constant="50" id="2h5-E5-Fu9"/>
+                                                <constraint firstAttribute="width" constant="50" id="NdK-nw-wmr"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-v1-Kge">
-                                            <rect key="frame" x="99" y="21" width="50" height="26"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-v1-Kge">
+                                            <rect key="frame" x="99" y="10" width="46.5" height="22.5"/>
                                             <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="19"/>
                                             <color key="textColor" name="DarkGrayText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc7-PU-sSs">
+                                            <rect key="frame" x="99" y="34.5" width="29.5" height="14"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-Italic" family="Open Sans" pointSize="12"/>
+                                            <color key="textColor" name="GrayText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha6-IY-bIi">
+                                            <rect key="frame" x="99" y="73.5" width="22.5" height="10.5"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-Italic" family="Open Sans" pointSize="9"/>
+                                            <color key="textColor" name="GrayText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-9l-1lf">
+                                            <rect key="frame" x="360" y="6" width="42" height="88.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkJ-R0-3il">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                                                    <color key="tintColor" name="GrayText"/>
+                                                    <inset key="contentEdgeInsets" minX="8" minY="10" maxX="8" maxY="10"/>
+                                                    <state key="normal">
+                                                        <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAT-a1-3TU">
+                                                    <rect key="frame" x="0.0" y="42" width="42" height="46.5"/>
+                                                    <color key="tintColor" name="GrayText"/>
+                                                    <inset key="contentEdgeInsets" minX="8" minY="10" maxX="8" maxY="10"/>
+                                                    <state key="normal">
+                                                        <imageReference key="image" image="bag.badge.plus" catalog="system" symbolScale="large"/>
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 2.80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pep-iR-gIG">
+                                            <rect key="frame" x="306" y="70.5" width="42" height="14"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="12"/>
+                                            <color key="textColor" name="MoneyGreen"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Zw1-ra-Yfy" firstAttribute="leading" secondItem="YSf-K1-X3g" secondAttribute="leading" constant="18" id="fLk-tE-nRz"/>
-                                        <constraint firstItem="Zw1-ra-Yfy" firstAttribute="centerY" secondItem="YSf-K1-X3g" secondAttribute="centerY" id="fYN-oV-ltj"/>
-                                        <constraint firstItem="Wz4-v1-Kge" firstAttribute="top" secondItem="YSf-K1-X3g" secondAttribute="topMargin" constant="10" id="fcH-ns-00C"/>
+                                        <constraint firstItem="Pep-iR-gIG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ha6-IY-bIi" secondAttribute="trailing" constant="8" symbolic="YES" id="6fv-M7-yPE"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wz4-v1-Kge" secondAttribute="trailing" constant="20" symbolic="YES" id="8bW-FE-Rv8"/>
+                                        <constraint firstItem="Wz4-v1-Kge" firstAttribute="leading" secondItem="nCa-Ad-r6I" secondAttribute="trailing" constant="31" id="9PB-XD-SUf"/>
+                                        <constraint firstItem="Cc7-PU-sSs" firstAttribute="top" secondItem="Wz4-v1-Kge" secondAttribute="bottom" constant="2" id="A3T-Ge-exV"/>
+                                        <constraint firstItem="nCa-Ad-r6I" firstAttribute="centerY" secondItem="YSf-K1-X3g" secondAttribute="centerY" id="GpL-Vu-ekM"/>
+                                        <constraint firstItem="zAT-a1-3TU" firstAttribute="leading" secondItem="Pep-iR-gIG" secondAttribute="trailing" constant="12" id="KK6-cP-AJ9"/>
+                                        <constraint firstItem="hOa-9l-1lf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cc7-PU-sSs" secondAttribute="trailing" constant="8" symbolic="YES" id="OIw-cb-Tpr"/>
+                                        <constraint firstItem="nCa-Ad-r6I" firstAttribute="leading" secondItem="YSf-K1-X3g" secondAttribute="leading" constant="18" id="Qlm-Y3-9Fy"/>
+                                        <constraint firstItem="ha6-IY-bIi" firstAttribute="leading" secondItem="Cc7-PU-sSs" secondAttribute="leading" id="ZuT-8u-HPd"/>
+                                        <constraint firstItem="Cc7-PU-sSs" firstAttribute="leading" secondItem="Wz4-v1-Kge" secondAttribute="leading" id="bXL-tC-gIL"/>
+                                        <constraint firstItem="Wz4-v1-Kge" firstAttribute="top" secondItem="YSf-K1-X3g" secondAttribute="top" constant="10" id="fcH-ns-00C"/>
+                                        <constraint firstAttribute="trailing" secondItem="hOa-9l-1lf" secondAttribute="trailing" constant="12" id="gFV-Oa-fKk"/>
+                                        <constraint firstAttribute="bottom" secondItem="ha6-IY-bIi" secondAttribute="bottom" constant="16" id="hZo-w6-oKN"/>
+                                        <constraint firstItem="hOa-9l-1lf" firstAttribute="centerY" secondItem="YSf-K1-X3g" secondAttribute="centerY" id="n1K-8D-Yot"/>
+                                        <constraint firstItem="Pep-iR-gIG" firstAttribute="firstBaseline" secondItem="ha6-IY-bIi" secondAttribute="firstBaseline" id="yTN-Yu-kuH"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="coffeeImageView" destination="Zw1-ra-Yfy" id="667-95-yIb"/>
-                                    <outlet property="image" destination="Zw1-ra-Yfy" id="1CK-S5-8fl"/>
-                                    <outlet property="imageView" destination="Zw1-ra-Yfy" id="tfQ-IH-Dng"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -205,7 +257,7 @@
                             <outlet property="delegate" destination="f7w-Hf-SPk" id="xhC-yb-TwE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gFj-ZQ-a2O"/>
+                    <navigationItem key="navigationItem" title="Cafés" id="gFj-ZQ-a2O"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evs-7g-ocb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,12 +303,14 @@
         <image name="HomeAccessories" width="146" height="147"/>
         <image name="HomeCoffees" width="136" height="136"/>
         <image name="HomeMachine" width="120" height="146"/>
+        <image name="bag.badge.plus" catalog="system" width="124" height="128"/>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <namedColor name="Accessories">
-            <color red="0.94901960784313721" green="0.8901960784313725" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.88999998569488525" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Coffees">
-            <color red="0.92941176470588238" green="0.87058823529411766" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92900002002716064" green="0.87099999189376831" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DarkGrayText">
             <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -264,8 +318,14 @@
         <namedColor name="DarkText">
             <color red="0.23921568627450981" green="0.23921568627450981" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="GrayText">
+            <color red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Machines">
-            <color red="0.86274509803921573" green="0.72156862745098038" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.86299997568130493" green="0.72200000286102295" blue="0.53700000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MoneyGreen">
+            <color red="0.050980392156862744" green="0.62352941176470589" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

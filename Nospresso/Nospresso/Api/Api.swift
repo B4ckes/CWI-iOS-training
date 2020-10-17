@@ -33,7 +33,7 @@ class Api {
             
             
             let decoder = JSONDecoder()
-            
+
             do {
                 let decodedData = try decoder.decode(T.self, from: data)
                 success(decodedData)

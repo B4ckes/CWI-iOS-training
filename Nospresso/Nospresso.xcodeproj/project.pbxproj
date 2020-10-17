@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		53E835D56C94415CD532A733 /* Pods_Nospresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E9146E8ABB6A12BFCF8716 /* Pods_Nospresso.framework */; };
+		70421FE1253B2F71009A3A8B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70421FE0253B2F71009A3A8B /* R.generated.swift */; };
+		70421FE6253B3050009A3A8B /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70421FE5253B3050009A3A8B /* Typealias.swift */; };
+		70421FED253B3200009A3A8B /* CoffeeCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70421FEC253B3200009A3A8B /* CoffeeCategoryHeaderView.swift */; };
+		70421FF2253B3241009A3A8B /* CoffeeCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70421FF1253B3241009A3A8B /* CoffeeCategoryHeaderView.xib */; };
 		70798B062538EC7800535BF0 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFC2538EC7700535BF0 /* OpenSans-BoldItalic.ttf */; };
 		70798B072538EC7800535BF0 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFD2538EC7700535BF0 /* OpenSans-ExtraBoldItalic.ttf */; };
 		70798B082538EC7800535BF0 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFE2538EC7700535BF0 /* OpenSans-LightItalic.ttf */; };
@@ -34,6 +38,8 @@
 		7097BCC5253659EB00F33603 /* Accessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCC4253659EB00F33603 /* Accessory.swift */; };
 		7097BCCB25365A0200F33603 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCCA25365A0200F33603 /* Api.swift */; };
 		7097BCD325365A5800F33603 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCD225365A5800F33603 /* Endpoint.swift */; };
+		709EF14A253B17BC004CB823 /* NavbarProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709EF149253B17BC004CB823 /* NavbarProductsViewController.swift */; };
+		709EF150253B1F51004CB823 /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709EF14F253B1F51004CB823 /* UIViewController+Helpers.swift */; };
 		F2622C6F1AA801CC854135C7 /* Pods_Nospresso_NospressoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742E7E47A2A9CCBC12345E92 /* Pods_Nospresso_NospressoUITests.framework */; };
 		F3122BC993C8015B9E5AD004 /* Pods_NospressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF4C3D338FA2EF2E1ECFCD /* Pods_NospressoTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +65,10 @@
 		00EFEB5D9C98C6FE7693295E /* Pods-Nospresso-NospressoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso-NospressoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		26C81F69FF619D19EF4CFB38 /* Pods-Nospresso-NospressoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso-NospressoUITests.release.xcconfig"; path = "Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2F33CE703A58CDCE10EB7FC8 /* Pods-NospressoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NospressoTests.release.xcconfig"; path = "Target Support Files/Pods-NospressoTests/Pods-NospressoTests.release.xcconfig"; sourceTree = "<group>"; };
+		70421FE0253B2F71009A3A8B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		70421FE5253B3050009A3A8B /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		70421FEC253B3200009A3A8B /* CoffeeCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCategoryHeaderView.swift; sourceTree = "<group>"; };
+		70421FF1253B3241009A3A8B /* CoffeeCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeCategoryHeaderView.xib; sourceTree = "<group>"; };
 		70798AFC2538EC7700535BF0 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		70798AFD2538EC7700535BF0 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		70798AFE2538EC7700535BF0 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -91,6 +101,8 @@
 		7097BCC4253659EB00F33603 /* Accessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessory.swift; sourceTree = "<group>"; };
 		7097BCCA25365A0200F33603 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		7097BCD225365A5800F33603 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		709EF149253B17BC004CB823 /* NavbarProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarProductsViewController.swift; sourceTree = "<group>"; };
+		709EF14F253B1F51004CB823 /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
 		742E7E47A2A9CCBC12345E92 /* Pods_Nospresso_NospressoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nospresso_NospressoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		953EC0A96A92AAB78721B2AA /* Pods-Nospresso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso.release.xcconfig"; path = "Target Support Files/Pods-Nospresso/Pods-Nospresso.release.xcconfig"; sourceTree = "<group>"; };
 		97AF4C3D338FA2EF2E1ECFCD /* Pods_NospressoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NospressoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +139,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70421FEA253B3178009A3A8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70421FEB253B3185009A3A8B /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		70421FEB253B3185009A3A8B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				70798B1D2538FAA400535BF0 /* CoffeeTableViewCell.swift */,
+				70421FEC253B3200009A3A8B /* CoffeeCategoryHeaderView.swift */,
+				70421FF1253B3241009A3A8B /* CoffeeCategoryHeaderView.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		70798AFA2538EB6D00535BF0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				70798B142538F49700535BF0 /* Coffees */,
+				709EF149253B17BC004CB823 /* NavbarProductsViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -163,8 +194,8 @@
 		70798B142538F49700535BF0 /* Coffees */ = {
 			isa = PBXGroup;
 			children = (
+				70421FEA253B3178009A3A8B /* Components */,
 				70798B152538F4B600535BF0 /* CoffeesTableViewController.swift */,
-				70798B1D2538FAA400535BF0 /* CoffeeTableViewCell.swift */,
 			);
 			path = Coffees;
 			sourceTree = "<group>";
@@ -194,6 +225,8 @@
 		7097BC74253639C200F33603 /* Nospresso */ = {
 			isa = PBXGroup;
 			children = (
+				70421FE0253B2F71009A3A8B /* R.generated.swift */,
+				709EF14E253B1F3C004CB823 /* Extensions */,
 				70798B132538F48C00535BF0 /* Modules */,
 				70798AFA2538EB6D00535BF0 /* Assets */,
 				7097BCC9253659F900F33603 /* Api */,
@@ -247,6 +280,15 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		709EF14E253B1F3C004CB823 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				709EF14F253B1F51004CB823 /* UIViewController+Helpers.swift */,
+				70421FE5253B3050009A3A8B /* Typealias.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B116195262B9484AB16D535F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,9 +320,11 @@
 			buildConfigurationList = 7097BC9C253639C300F33603 /* Build configuration list for PBXNativeTarget "Nospresso" */;
 			buildPhases = (
 				D6A218F40E7B33B025B51CC0 /* [CP] Check Pods Manifest.lock */,
+				709EF157253B286A004CB823 /* R.Swift Run Script */,
 				7097BC6E253639C200F33603 /* Sources */,
 				7097BC6F253639C200F33603 /* Frameworks */,
 				7097BC70253639C200F33603 /* Resources */,
+				2965B12FA451AB028B03400C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +362,7 @@
 				7097BC8F253639C300F33603 /* Sources */,
 				7097BC90253639C300F33603 /* Frameworks */,
 				7097BC91253639C300F33603 /* Resources */,
+				B43262C0C0D4AB49D3F3A330 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -379,6 +424,7 @@
 				70798B0B2538EC7800535BF0 /* OpenSans-Italic.ttf in Resources */,
 				70798B0A2538EC7800535BF0 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				70798B0D2538EC7800535BF0 /* OpenSans-SemiBold.ttf in Resources */,
+				70421FF2253B3241009A3A8B /* CoffeeCategoryHeaderView.xib in Resources */,
 				7097BC82253639C300F33603 /* LaunchScreen.storyboard in Resources */,
 				7097BC7F253639C300F33603 /* Assets.xcassets in Resources */,
 				70798B082538EC7800535BF0 /* OpenSans-LightItalic.ttf in Resources */,
@@ -409,6 +455,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2965B12FA451AB028B03400C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nospresso/Pods-Nospresso-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nospresso/Pods-Nospresso-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nospresso/Pods-Nospresso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		709EF157253B286A004CB823 /* R.Swift Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R.Swift Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		AE6BB078A028E103672A4E06 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,6 +512,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B43262C0C0D4AB49D3F3A330 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CEFEB00F4D33930368EF5D43 /* [CP] Check Pods Manifest.lock */ = {
@@ -483,16 +583,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				70798B162538F4B600535BF0 /* CoffeesTableViewController.swift in Sources */,
+				70421FE1253B2F71009A3A8B /* R.generated.swift in Sources */,
 				7097BC7A253639C200F33603 /* ViewController.swift in Sources */,
+				70421FED253B3200009A3A8B /* CoffeeCategoryHeaderView.swift in Sources */,
 				7097BCD325365A5800F33603 /* Endpoint.swift in Sources */,
+				70421FE6253B3050009A3A8B /* Typealias.swift in Sources */,
 				7097BCB32536592B00F33603 /* Capsule.swift in Sources */,
 				7097BC76253639C200F33603 /* AppDelegate.swift in Sources */,
 				7097BC78253639C200F33603 /* SceneDelegate.swift in Sources */,
+				709EF14A253B17BC004CB823 /* NavbarProductsViewController.swift in Sources */,
 				7097BCBB2536595E00F33603 /* Coffee.swift in Sources */,
 				7097BCC0253659BF00F33603 /* Machine.swift in Sources */,
 				7097BCCB25365A0200F33603 /* Api.swift in Sources */,
 				70798B1E2538FAA400535BF0 /* CoffeeTableViewCell.swift in Sources */,
 				7097BCC5253659EB00F33603 /* Accessory.swift in Sources */,
+				709EF150253B1F51004CB823 /* UIViewController+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

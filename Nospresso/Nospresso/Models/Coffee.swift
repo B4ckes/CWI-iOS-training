@@ -13,13 +13,9 @@ public struct Coffee: Decodable {
     let id: Int
     let name: String
     let coffeeDescription: String
-    let intensity: String
     let price: Double
     let image: String
     let measures: [Measure]
-    let origin: String
-    let roasting: String
-    let aromaticProfile: String
     
     enum Measure: String, Decodable {
         case ristretto, espresso, lungo
@@ -29,12 +25,8 @@ public struct Coffee: Decodable {
         case id
         case name = "nome"
         case coffeeDescription = "descricao"
-        case intensity = "intensidade"
         case price = "precoUnitario"
         case image = "imagem"
         case measures = "medidas"
-        case origin = "origem"
-        case roasting = "torrefacao"
-        case aromaticProfile = "perfilAromatico"
     }
 }

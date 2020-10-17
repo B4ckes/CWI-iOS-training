@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: d9dd0ab46550c2704f7774eec1ad4bff297e2228
+PODS:
+  - Nuke (9.1.2)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+
+DEPENDENCIES:
+  - Nuke
+  - R.swift
+
+SPEC REPOS:
+  trunk:
+    - Nuke
+    - R.swift
+    - R.swift.Library
+
+SPEC CHECKSUMS:
+  Nuke: dd2e6be6a34c042a7861e190632781d11f253026
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+
+PODFILE CHECKSUM: 8f4dadcb246519ae52283a44e427c9b3387ead33
 
 COCOAPODS: 1.9.3
