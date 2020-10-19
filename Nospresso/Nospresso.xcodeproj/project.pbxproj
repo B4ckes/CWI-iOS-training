@@ -12,6 +12,8 @@
 		70421FE6253B3050009A3A8B /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70421FE5253B3050009A3A8B /* Typealias.swift */; };
 		70421FED253B3200009A3A8B /* CoffeeCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70421FEC253B3200009A3A8B /* CoffeeCategoryHeaderView.swift */; };
 		70421FF2253B3241009A3A8B /* CoffeeCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70421FF1253B3241009A3A8B /* CoffeeCategoryHeaderView.xib */; };
+		70694374253D0F4400936C39 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70694373253D0F4400936C39 /* Coffee.swift */; };
+		70694379253D10C000936C39 /* UIImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70694378253D10C000936C39 /* UIImageView+LoadImage.swift */; };
 		70798B062538EC7800535BF0 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFC2538EC7700535BF0 /* OpenSans-BoldItalic.ttf */; };
 		70798B072538EC7800535BF0 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFD2538EC7700535BF0 /* OpenSans-ExtraBoldItalic.ttf */; };
 		70798B082538EC7800535BF0 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFE2538EC7700535BF0 /* OpenSans-LightItalic.ttf */; };
@@ -32,8 +34,8 @@
 		7097BC82253639C300F33603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7097BC80253639C300F33603 /* LaunchScreen.storyboard */; };
 		7097BC8D253639C300F33603 /* NospressoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BC8C253639C300F33603 /* NospressoTests.swift */; };
 		7097BC98253639C300F33603 /* NospressoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BC97253639C300F33603 /* NospressoUITests.swift */; };
-		7097BCB32536592B00F33603 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCB22536592B00F33603 /* Capsule.swift */; };
-		7097BCBB2536595E00F33603 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCBA2536595E00F33603 /* Coffee.swift */; };
+		7097BCB32536592B00F33603 /* CoffeeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCB22536592B00F33603 /* CoffeeCategory.swift */; };
+		7097BCBB2536595E00F33603 /* CoffeeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCBA2536595E00F33603 /* CoffeeItem.swift */; };
 		7097BCC0253659BF00F33603 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCBF253659BF00F33603 /* Machine.swift */; };
 		7097BCC5253659EB00F33603 /* Accessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCC4253659EB00F33603 /* Accessory.swift */; };
 		7097BCCB25365A0200F33603 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCCA25365A0200F33603 /* Api.swift */; };
@@ -69,6 +71,8 @@
 		70421FE5253B3050009A3A8B /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		70421FEC253B3200009A3A8B /* CoffeeCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCategoryHeaderView.swift; sourceTree = "<group>"; };
 		70421FF1253B3241009A3A8B /* CoffeeCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeCategoryHeaderView.xib; sourceTree = "<group>"; };
+		70694373253D0F4400936C39 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		70694378253D10C000936C39 /* UIImageView+LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadImage.swift"; sourceTree = "<group>"; };
 		70798AFC2538EC7700535BF0 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		70798AFD2538EC7700535BF0 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		70798AFE2538EC7700535BF0 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -95,8 +99,8 @@
 		7097BC93253639C300F33603 /* NospressoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NospressoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7097BC97253639C300F33603 /* NospressoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NospressoUITests.swift; sourceTree = "<group>"; };
 		7097BC99253639C300F33603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7097BCB22536592B00F33603 /* Capsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsule.swift; sourceTree = "<group>"; };
-		7097BCBA2536595E00F33603 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		7097BCB22536592B00F33603 /* CoffeeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCategory.swift; sourceTree = "<group>"; };
+		7097BCBA2536595E00F33603 /* CoffeeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeItem.swift; sourceTree = "<group>"; };
 		7097BCBF253659BF00F33603 /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 		7097BCC4253659EB00F33603 /* Accessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessory.swift; sourceTree = "<group>"; };
 		7097BCCA25365A0200F33603 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -263,10 +267,11 @@
 		7097BCB12536590D00F33603 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7097BCB22536592B00F33603 /* Capsule.swift */,
-				7097BCBA2536595E00F33603 /* Coffee.swift */,
+				7097BCB22536592B00F33603 /* CoffeeCategory.swift */,
+				7097BCBA2536595E00F33603 /* CoffeeItem.swift */,
 				7097BCBF253659BF00F33603 /* Machine.swift */,
 				7097BCC4253659EB00F33603 /* Accessory.swift */,
+				70694373253D0F4400936C39 /* Coffee.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 			children = (
 				709EF14F253B1F51004CB823 /* UIViewController+Helpers.swift */,
 				70421FE5253B3050009A3A8B /* Typealias.swift */,
+				70694378253D10C000936C39 /* UIImageView+LoadImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -588,12 +594,14 @@
 				70421FED253B3200009A3A8B /* CoffeeCategoryHeaderView.swift in Sources */,
 				7097BCD325365A5800F33603 /* Endpoint.swift in Sources */,
 				70421FE6253B3050009A3A8B /* Typealias.swift in Sources */,
-				7097BCB32536592B00F33603 /* Capsule.swift in Sources */,
+				7097BCB32536592B00F33603 /* CoffeeCategory.swift in Sources */,
 				7097BC76253639C200F33603 /* AppDelegate.swift in Sources */,
 				7097BC78253639C200F33603 /* SceneDelegate.swift in Sources */,
 				709EF14A253B17BC004CB823 /* NavbarProductsViewController.swift in Sources */,
-				7097BCBB2536595E00F33603 /* Coffee.swift in Sources */,
+				70694379253D10C000936C39 /* UIImageView+LoadImage.swift in Sources */,
+				7097BCBB2536595E00F33603 /* CoffeeItem.swift in Sources */,
 				7097BCC0253659BF00F33603 /* Machine.swift in Sources */,
+				70694374253D0F4400936C39 /* Coffee.swift in Sources */,
 				7097BCCB25365A0200F33603 /* Api.swift in Sources */,
 				70798B1E2538FAA400535BF0 /* CoffeeTableViewCell.swift in Sources */,
 				7097BCC5253659EB00F33603 /* Accessory.swift in Sources */,

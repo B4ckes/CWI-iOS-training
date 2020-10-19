@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7l-bE-sWF">
-                    <rect key="frame" x="15.999999999999996" y="10.666666666666666" width="47.666666666666657" height="28.666666666666671"/>
+                    <rect key="frame" x="15.999999999999996" y="12.666666666666666" width="51.666666666666657" height="24.666666666666671"/>
                     <fontDescription key="fontDescription" name="OpenSans-LightItalic" family="Open Sans" pointSize="21"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>

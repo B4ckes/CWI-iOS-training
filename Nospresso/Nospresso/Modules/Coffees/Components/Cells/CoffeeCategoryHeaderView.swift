@@ -10,7 +10,7 @@ import UIKit
 class CoffeeCategoryHeaderView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     
-    func config(to category: Capsule) {
+    func config(to category: CoffeeCategory) {
         titleLabel.text = category.category
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 class CoffeesTableViewController: UITableViewController {
     
     private let API = Api()
-    private var categories: [Capsule] = []
+    private var categories: [CoffeeCategory] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +33,11 @@ class CoffeesTableViewController: UITableViewController {
 // MARK: Backend
 extension CoffeesTableViewController {
     func request() {
-        API.request(endpoint: .capsulas) { (categories: [Capsule]) in
+        API.request(endpoint: .capsulas) { (categories: [CoffeeCategory]) in
             self.categories = categories
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         } failure: { error in
             print(error)
         }
@@ -65,7 +67,11 @@ extension CoffeesTableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { 100 }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "coffeeCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "coffeeCell", for: indexPath) as! CoffeeTableViewCell
+        
+        let coffee = categories[indexPath.section].coffees[indexPath.row]
+        
+        cell.config(with: coffee)
         
         return cell
     }
