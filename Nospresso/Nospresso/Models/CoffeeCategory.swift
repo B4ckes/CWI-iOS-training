@@ -9,7 +9,7 @@ import Foundation
 
 public struct CoffeeCategory: Decodable {
     let category: String
-    let coffees: [CoffeeItem]
+    let coffees: [Coffee]
     
     enum CodingKeys: String, CodingKey {
         case category = "categoria"

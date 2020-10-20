@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct CoffeeItem: Decodable {
+public struct Coffee: Decodable {
     public var description: String {name}
     
     let id: Int

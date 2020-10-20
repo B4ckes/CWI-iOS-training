@@ -205,7 +205,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-9l-1lf">
                                             <rect key="frame" x="360" y="6" width="42" height="88.5"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkJ-R0-3il">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkJ-R0-3il">
                                                     <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
                                                     <color key="tintColor" name="GrayText"/>
                                                     <inset key="contentEdgeInsets" minX="8" minY="10" maxX="8" maxY="10"/>
@@ -214,7 +214,7 @@
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAT-a1-3TU">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAT-a1-3TU">
                                                     <rect key="frame" x="0.0" y="42" width="42" height="46.5"/>
                                                     <color key="tintColor" name="GrayText"/>
                                                     <inset key="contentEdgeInsets" minX="8" minY="10" maxX="8" maxY="10"/>
@@ -269,6 +269,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evs-7g-ocb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1119" y="-96"/>
+        </scene>
+        <!--Coffee Details View Controller-->
+        <scene sceneID="LZF-ft-bje">
+            <objects>
+                <viewController storyboardIdentifier="CoffeeDetailsViewController" id="1oC-5x-eQV" customClass="CoffeeDetailsViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I93-qD-8LR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s09-94-5Bd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="FHn-Hb-7Uk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="326"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeCoffees" translatesAutoresizingMaskIntoConstraints="NO" id="8AV-vq-TLp">
+                                                <rect key="frame" x="14" y="14" width="386" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="NY0-on-J4Q"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yY9-Iz-4yT">
+                                                <rect key="frame" x="14" y="164" width="386" height="38"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="nlQ-8g-I2I"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EbZ-Jc-Hrn">
+                                                <rect key="frame" x="14" y="202" width="386" height="110"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="v9R-eG-khe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="110"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dXc-9b-hve" customClass="IntensityCounterStackView" customModule="Nospresso" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="193" height="110"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmI-iG-OHy">
+                                                        <rect key="frame" x="193" y="0.0" width="193" height="110"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="14" left="14" bottom="14" right="14"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FHn-Hb-7Uk" secondAttribute="trailing" id="84W-rF-KbG"/>
+                                    <constraint firstItem="FHn-Hb-7Uk" firstAttribute="top" secondItem="s09-94-5Bd" secondAttribute="top" id="aar-kA-T5H"/>
+                                    <constraint firstItem="FHn-Hb-7Uk" firstAttribute="width" secondItem="s09-94-5Bd" secondAttribute="width" id="bMV-KJ-2oo"/>
+                                    <constraint firstAttribute="bottom" secondItem="FHn-Hb-7Uk" secondAttribute="bottom" id="meH-d3-Lrf"/>
+                                    <constraint firstItem="FHn-Hb-7Uk" firstAttribute="leading" secondItem="s09-94-5Bd" secondAttribute="leading" id="wsX-G2-bRs"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HsN-UB-eD8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HsN-UB-eD8" firstAttribute="bottom" secondItem="s09-94-5Bd" secondAttribute="bottom" id="6QI-eq-z3n"/>
+                            <constraint firstItem="s09-94-5Bd" firstAttribute="top" secondItem="HsN-UB-eD8" secondAttribute="top" id="IrA-nf-S1V"/>
+                            <constraint firstItem="HsN-UB-eD8" firstAttribute="trailing" secondItem="s09-94-5Bd" secondAttribute="trailing" id="TNt-hw-zLC"/>
+                            <constraint firstItem="s09-94-5Bd" firstAttribute="leading" secondItem="HsN-UB-eD8" secondAttribute="leading" id="tbh-nW-kAt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coffeImageView" destination="8AV-vq-TLp" id="cCa-Iv-REb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOa-ot-dek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2188" y="-96"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Wuq-vY-zdl">

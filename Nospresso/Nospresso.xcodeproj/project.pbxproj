@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		53E835D56C94415CD532A733 /* Pods_Nospresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E9146E8ABB6A12BFCF8716 /* Pods_Nospresso.framework */; };
+		7041BEBD253F77E400EC02A4 /* CoffeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041BEBC253F77E400EC02A4 /* CoffeeDetailsViewController.swift */; };
+		7041BEC3253F7F7200EC02A4 /* IntensityCounterStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041BEC2253F7F7200EC02A4 /* IntensityCounterStackView.swift */; };
+		7041BEC8253F888100EC02A4 /* CoffeeDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041BEC7253F888100EC02A4 /* CoffeeDetailsPresenter.swift */; };
+		7041BECD253F890200EC02A4 /* CoffeeDetail+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041BECC253F890200EC02A4 /* CoffeeDetail+Protocols.swift */; };
 		70421FE1253B2F71009A3A8B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70421FE0253B2F71009A3A8B /* R.generated.swift */; };
 		70421FE6253B3050009A3A8B /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70421FE5253B3050009A3A8B /* Typealias.swift */; };
 		70421FED253B3200009A3A8B /* CoffeeCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70421FEC253B3200009A3A8B /* CoffeeCategoryHeaderView.swift */; };
 		70421FF2253B3241009A3A8B /* CoffeeCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70421FF1253B3241009A3A8B /* CoffeeCategoryHeaderView.xib */; };
-		70694374253D0F4400936C39 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70694373253D0F4400936C39 /* Coffee.swift */; };
 		70694379253D10C000936C39 /* UIImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70694378253D10C000936C39 /* UIImageView+LoadImage.swift */; };
 		70798B062538EC7800535BF0 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFC2538EC7700535BF0 /* OpenSans-BoldItalic.ttf */; };
 		70798B072538EC7800535BF0 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70798AFD2538EC7700535BF0 /* OpenSans-ExtraBoldItalic.ttf */; };
@@ -67,11 +70,14 @@
 		00EFEB5D9C98C6FE7693295E /* Pods-Nospresso-NospressoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso-NospressoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		26C81F69FF619D19EF4CFB38 /* Pods-Nospresso-NospressoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso-NospressoUITests.release.xcconfig"; path = "Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2F33CE703A58CDCE10EB7FC8 /* Pods-NospressoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NospressoTests.release.xcconfig"; path = "Target Support Files/Pods-NospressoTests/Pods-NospressoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7041BEBC253F77E400EC02A4 /* CoffeeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsViewController.swift; sourceTree = "<group>"; };
+		7041BEC2253F7F7200EC02A4 /* IntensityCounterStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityCounterStackView.swift; sourceTree = "<group>"; };
+		7041BEC7253F888100EC02A4 /* CoffeeDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsPresenter.swift; sourceTree = "<group>"; };
+		7041BECC253F890200EC02A4 /* CoffeeDetail+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoffeeDetail+Protocols.swift"; sourceTree = "<group>"; };
 		70421FE0253B2F71009A3A8B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		70421FE5253B3050009A3A8B /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		70421FEC253B3200009A3A8B /* CoffeeCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCategoryHeaderView.swift; sourceTree = "<group>"; };
 		70421FF1253B3241009A3A8B /* CoffeeCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeCategoryHeaderView.xib; sourceTree = "<group>"; };
-		70694373253D0F4400936C39 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		70694378253D10C000936C39 /* UIImageView+LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadImage.swift"; sourceTree = "<group>"; };
 		70798AFC2538EC7700535BF0 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		70798AFD2538EC7700535BF0 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -143,6 +149,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7041BEB8253F779300EC02A4 /* CoffeeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7041BEC1253F7F0300EC02A4 /* Components */,
+				7041BEBC253F77E400EC02A4 /* CoffeeDetailsViewController.swift */,
+				7041BEC7253F888100EC02A4 /* CoffeeDetailsPresenter.swift */,
+				7041BECC253F890200EC02A4 /* CoffeeDetail+Protocols.swift */,
+			);
+			path = CoffeeDetails;
+			sourceTree = "<group>";
+		};
+		7041BEC1253F7F0300EC02A4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7041BEC2253F7F7200EC02A4 /* IntensityCounterStackView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		70421FEA253B3178009A3A8B /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +214,7 @@
 		70798B132538F48C00535BF0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7041BEB8253F779300EC02A4 /* CoffeeDetails */,
 				70798B142538F49700535BF0 /* Coffees */,
 				709EF149253B17BC004CB823 /* NavbarProductsViewController.swift */,
 			);
@@ -271,7 +297,6 @@
 				7097BCBA2536595E00F33603 /* CoffeeItem.swift */,
 				7097BCBF253659BF00F33603 /* Machine.swift */,
 				7097BCC4253659EB00F33603 /* Accessory.swift */,
-				70694373253D0F4400936C39 /* Coffee.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -592,20 +617,23 @@
 				70421FE1253B2F71009A3A8B /* R.generated.swift in Sources */,
 				7097BC7A253639C200F33603 /* ViewController.swift in Sources */,
 				70421FED253B3200009A3A8B /* CoffeeCategoryHeaderView.swift in Sources */,
+				7041BEC8253F888100EC02A4 /* CoffeeDetailsPresenter.swift in Sources */,
 				7097BCD325365A5800F33603 /* Endpoint.swift in Sources */,
 				70421FE6253B3050009A3A8B /* Typealias.swift in Sources */,
 				7097BCB32536592B00F33603 /* CoffeeCategory.swift in Sources */,
 				7097BC76253639C200F33603 /* AppDelegate.swift in Sources */,
 				7097BC78253639C200F33603 /* SceneDelegate.swift in Sources */,
 				709EF14A253B17BC004CB823 /* NavbarProductsViewController.swift in Sources */,
+				7041BEC3253F7F7200EC02A4 /* IntensityCounterStackView.swift in Sources */,
 				70694379253D10C000936C39 /* UIImageView+LoadImage.swift in Sources */,
 				7097BCBB2536595E00F33603 /* CoffeeItem.swift in Sources */,
 				7097BCC0253659BF00F33603 /* Machine.swift in Sources */,
-				70694374253D0F4400936C39 /* Coffee.swift in Sources */,
 				7097BCCB25365A0200F33603 /* Api.swift in Sources */,
 				70798B1E2538FAA400535BF0 /* CoffeeTableViewCell.swift in Sources */,
+				7041BECD253F890200EC02A4 /* CoffeeDetail+Protocols.swift in Sources */,
 				7097BCC5253659EB00F33603 /* Accessory.swift in Sources */,
 				709EF150253B1F51004CB823 /* UIViewController+Helpers.swift in Sources */,
+				7041BEBD253F77E400EC02A4 /* CoffeeDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,8 @@ extension UIImageView {
     func loadImage(with url: String) {
         guard let url = URL(string: url) else { return }
         
-        Nuke.loadImage(with: url, into: self)
+        let options = ImageLoadingOptions(placeholder: UIImage(systemName: "photo"))
+        
+        Nuke.loadImage(with: url, options: options, into: self)
     }
 }

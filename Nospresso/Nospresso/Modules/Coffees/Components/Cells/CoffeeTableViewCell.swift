@@ -14,7 +14,7 @@ class CoffeeTableViewCell: UITableViewCell {
     @IBOutlet weak var intensityLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
-    func config(with coffee: CoffeeItem) {
+    func config(with coffee: Coffee) {
         coffeeImageView.loadImage(with: coffee.image)
         coffeeNameLabel.text = coffee.name
         descriptionLabel.text = coffee.coffeeDescription

@@ -75,4 +75,12 @@ extension CoffeesTableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let coffee = categories[indexPath.section].coffees[indexPath.row]
+        
+        let detailsVC = CoffeeDetailsPresenter.createModule(with: coffee)
+        
+        navigationController?.pushViewController(detailsVC, animated: true)
+    }
 }

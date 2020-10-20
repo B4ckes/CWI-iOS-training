@@ -571,7 +571,12 @@ struct _R: Rswift.Validatable {
       typealias InitialController = UIKit.UITabBarController
 
       let bundle = R.hostingBundle
+      let coffeeDetailsViewController = StoryboardViewControllerResource<CoffeeDetailsViewController>(identifier: "CoffeeDetailsViewController")
       let name = "Main"
+
+      func coffeeDetailsViewController(_: Void = ()) -> CoffeeDetailsViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: coffeeDetailsViewController)
+      }
 
       static func validate() throws {
         if UIKit.UIImage(named: "HomeAccessories", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'HomeAccessories' is used in storyboard 'Main', but couldn't be loaded.") }
@@ -589,6 +594,7 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "Machines", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Machines' is used in storyboard 'Main', but couldn't be loaded.") }
           if UIKit.UIColor(named: "MoneyGreen", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'MoneyGreen' is used in storyboard 'Main', but couldn't be loaded.") }
         }
+        if _R.storyboard.main().coffeeDetailsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'coffeeDetailsViewController' could not be loaded from storyboard 'Main' as 'CoffeeDetailsViewController'.") }
       }
 
       fileprivate init() {}
