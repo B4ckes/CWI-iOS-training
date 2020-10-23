@@ -1,5 +1,5 @@
 //
-//  CoffeeItem.swift
+//  Coffee.swift
 //  Nospresso
 //
 //  Created by Lucas Eduardo Backes on 13/10/20.
@@ -13,10 +13,16 @@ public struct Coffee: Decodable {
     let id: Int
     let name: String
     let coffeeDescription: String
+    let intensity: Int?
     let price: Double
     let image: String
     let measures: [Measure]
-    let intensity: Int?
+    
+    let origin: String?
+    let roasting: String?
+    let aromaticProfile: String?
+    
+    
     
     enum Measure: String, Decodable {
         case ristretto, espresso, lungo
@@ -30,5 +36,8 @@ public struct Coffee: Decodable {
         case price = "precoUnitario"
         case image = "imagem"
         case measures = "medidas"
+        case origin = "origem"
+        case roasting = "torrefacao"
+        case aromaticProfile = "perfilAromatico"
     }
 }

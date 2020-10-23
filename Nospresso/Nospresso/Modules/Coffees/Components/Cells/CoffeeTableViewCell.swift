@@ -19,6 +19,6 @@ class CoffeeTableViewCell: UITableViewCell {
         coffeeNameLabel.text = coffee.name
         descriptionLabel.text = coffee.coffeeDescription
         intensityLabel.text = "intensidade: \(coffee.intensity ?? 0)"
-        priceLabel.text = String(format: "R$ %.02f", coffee.price)
+        priceLabel.text = coffee.price.toCurrency
     }
 }

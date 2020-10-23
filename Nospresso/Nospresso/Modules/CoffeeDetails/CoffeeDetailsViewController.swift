@@ -11,6 +11,9 @@ class CoffeeDetailsViewController: UIViewController {
     var presenter: CoffeeDetailsPresenterType?
 
     @IBOutlet weak var coffeImageView: UIImageView!
+    @IBOutlet weak var measuresStackView: UIStackView!
+    @IBOutlet weak var intensityStackView: IntensityCounterStackView!
+    @IBOutlet weak var intensityLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,21 @@ extension CoffeeDetailsViewController: CoffeeDetailsViewType {
     func renderData(from coffee: Coffee) {
         DispatchQueue.main.async {
             self.coffeImageView.loadImage(with: coffee.image)
+            
+            if let intensity = coffee.intensity {
+                self.intensityStackView.config(for: intensity)
+                self.intensityLabel.text = "intensidade: \(intensity)"
+            } else {
+                self.intensityLabel.isHidden = true
+            }
+            
+            for measure in coffee.measures {
+                let view = MeasureView.doNib()
+                view.config(with: measure)
+                self.measuresStackView.addArrangedSubview(view)
+            }
+
+            self.measuresStackView.addArrangedSubview(UIView())
         }
     }
 }

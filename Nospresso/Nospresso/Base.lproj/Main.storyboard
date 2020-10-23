@@ -151,6 +151,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rVc-Lf-hqa"/>
+                    <connections>
+                        <outlet property="machinesView" destination="CPm-J5-8nH" id="9LN-wi-RQj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qo8-sb-WTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="AwG-5u-V8D">
@@ -279,10 +282,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s09-94-5Bd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="733"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="FHn-Hb-7Uk">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="326"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="490"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeCoffees" translatesAutoresizingMaskIntoConstraints="NO" id="8AV-vq-TLp">
                                                 <rect key="frame" x="14" y="14" width="386" height="150"/>
@@ -298,23 +301,45 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EbZ-Jc-Hrn">
-                                                <rect key="frame" x="14" y="202" width="386" height="110"/>
+                                                <rect key="frame" x="14" y="202" width="386" height="123"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="v9R-eG-khe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="110"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="123"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dXc-9b-hve" customClass="IntensityCounterStackView" customModule="Nospresso" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="193" height="110"/>
                                                             </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqz-Zr-u3W">
+                                                                <rect key="frame" x="0.0" y="110" width="193" height="13"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="11"/>
+                                                                <color key="textColor" name="GrayText"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmI-iG-OHy">
-                                                        <rect key="frame" x="193" y="0.0" width="193" height="110"/>
+                                                        <rect key="frame" x="193" y="0.0" width="193" height="123"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLh-Lb-Rv9">
+                                                <rect key="frame" x="14" y="325" width="386" height="27"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="Y5a-Ue-IJk"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORMAS DE DEGUSTAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMe-bQ-pj9">
+                                                <rect key="frame" x="14" y="352" width="386" height="14"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPx-qX-GL0">
+                                                <rect key="frame" x="14" y="366" width="386" height="110"/>
                                             </stackView>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="14" left="14" bottom="14" right="14"/>
@@ -324,22 +349,38 @@
                                     <constraint firstAttribute="trailing" secondItem="FHn-Hb-7Uk" secondAttribute="trailing" id="84W-rF-KbG"/>
                                     <constraint firstItem="FHn-Hb-7Uk" firstAttribute="top" secondItem="s09-94-5Bd" secondAttribute="top" id="aar-kA-T5H"/>
                                     <constraint firstItem="FHn-Hb-7Uk" firstAttribute="width" secondItem="s09-94-5Bd" secondAttribute="width" id="bMV-KJ-2oo"/>
-                                    <constraint firstAttribute="bottom" secondItem="FHn-Hb-7Uk" secondAttribute="bottom" id="meH-d3-Lrf"/>
+                                    <constraint firstAttribute="bottom" secondItem="FHn-Hb-7Uk" secondAttribute="bottom" constant="24" id="meH-d3-Lrf"/>
                                     <constraint firstItem="FHn-Hb-7Uk" firstAttribute="leading" secondItem="s09-94-5Bd" secondAttribute="leading" id="wsX-G2-bRs"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvH-ec-eM5">
+                                <rect key="frame" x="60" y="789" width="294" height="45"/>
+                                <color key="backgroundColor" name="ButtonGreen"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="14" maxX="0.0" maxY="14"/>
+                                <state key="normal" title="Adicionar à sacola">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HsN-UB-eD8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="HsN-UB-eD8" firstAttribute="bottom" secondItem="s09-94-5Bd" secondAttribute="bottom" id="6QI-eq-z3n"/>
                             <constraint firstItem="s09-94-5Bd" firstAttribute="top" secondItem="HsN-UB-eD8" secondAttribute="top" id="IrA-nf-S1V"/>
                             <constraint firstItem="HsN-UB-eD8" firstAttribute="trailing" secondItem="s09-94-5Bd" secondAttribute="trailing" id="TNt-hw-zLC"/>
+                            <constraint firstItem="HsN-UB-eD8" firstAttribute="bottom" secondItem="cvH-ec-eM5" secondAttribute="bottom" constant="28" id="TS5-Lj-VTm"/>
+                            <constraint firstItem="cvH-ec-eM5" firstAttribute="top" secondItem="s09-94-5Bd" secondAttribute="bottom" constant="12" id="Tpr-aY-Su1"/>
+                            <constraint firstItem="HsN-UB-eD8" firstAttribute="bottom" secondItem="cvH-ec-eM5" secondAttribute="bottom" constant="28" id="a62-qW-1GK"/>
+                            <constraint firstItem="cvH-ec-eM5" firstAttribute="leading" secondItem="HsN-UB-eD8" secondAttribute="leading" constant="60" id="biO-0O-tE7"/>
                             <constraint firstItem="s09-94-5Bd" firstAttribute="leading" secondItem="HsN-UB-eD8" secondAttribute="leading" id="tbh-nW-kAt"/>
+                            <constraint firstItem="HsN-UB-eD8" firstAttribute="trailing" secondItem="cvH-ec-eM5" secondAttribute="trailing" constant="60" id="yS9-JO-Ldd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="coffeImageView" destination="8AV-vq-TLp" id="cCa-Iv-REb"/>
+                        <outlet property="intensityLabel" destination="oqz-Zr-u3W" id="IAG-WA-QI8"/>
+                        <outlet property="intensityStackView" destination="dXc-9b-hve" id="pYh-pw-lAa"/>
+                        <outlet property="measuresStackView" destination="cPx-qX-GL0" id="YLI-rf-L3K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOa-ot-dek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -391,6 +432,9 @@
         <image name="heart" catalog="system" width="128" height="109"/>
         <namedColor name="Accessories">
             <color red="0.94900000095367432" green="0.88999998569488525" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonGreen">
+            <color red="0.47843137254901963" green="0.69803921568627447" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Coffees">
             <color red="0.92900002002716064" green="0.87099999189376831" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

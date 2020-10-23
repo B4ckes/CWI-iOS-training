@@ -45,6 +45,15 @@
 		7097BCD325365A5800F33603 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097BCD225365A5800F33603 /* Endpoint.swift */; };
 		709EF14A253B17BC004CB823 /* NavbarProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709EF149253B17BC004CB823 /* NavbarProductsViewController.swift */; };
 		709EF150253B1F51004CB823 /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709EF14F253B1F51004CB823 /* UIViewController+Helpers.swift */; };
+		70E6C40525421CF900A61108 /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E6C40425421CF900A61108 /* MeasureView.swift */; };
+		70E6C40A25421D1E00A61108 /* MeasureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E6C40925421D1E00A61108 /* MeasureView.xib */; };
+		70E6C4172542573A00A61108 /* MachinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E6C4152542573A00A61108 /* MachinesViewController.swift */; };
+		70E6C4182542573A00A61108 /* MachinesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E6C4162542573A00A61108 /* MachinesViewController.xib */; };
+		70E6C4222542581700A61108 /* MachineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E6C4202542581700A61108 /* MachineCollectionViewCell.swift */; };
+		70E6C4232542581700A61108 /* MachineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E6C4212542581700A61108 /* MachineCollectionViewCell.xib */; };
+		70E6C42B25425B6F00A61108 /* Double+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E6C42A25425B6F00A61108 /* Double+Currency.swift */; };
+		70E6C43025425D2C00A61108 /* Machines+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E6C42F25425D2C00A61108 /* Machines+Protocols.swift */; };
+		70E6C43525425D8200A61108 /* MachinesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E6C43425425D8200A61108 /* MachinesPresenter.swift */; };
 		F2622C6F1AA801CC854135C7 /* Pods_Nospresso_NospressoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742E7E47A2A9CCBC12345E92 /* Pods_Nospresso_NospressoUITests.framework */; };
 		F3122BC993C8015B9E5AD004 /* Pods_NospressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF4C3D338FA2EF2E1ECFCD /* Pods_NospressoTests.framework */; };
 /* End PBXBuildFile section */
@@ -113,6 +122,15 @@
 		7097BCD225365A5800F33603 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		709EF149253B17BC004CB823 /* NavbarProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarProductsViewController.swift; sourceTree = "<group>"; };
 		709EF14F253B1F51004CB823 /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
+		70E6C40425421CF900A61108 /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+		70E6C40925421D1E00A61108 /* MeasureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasureView.xib; sourceTree = "<group>"; };
+		70E6C4152542573A00A61108 /* MachinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesViewController.swift; sourceTree = "<group>"; };
+		70E6C4162542573A00A61108 /* MachinesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MachinesViewController.xib; sourceTree = "<group>"; };
+		70E6C4202542581700A61108 /* MachineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineCollectionViewCell.swift; sourceTree = "<group>"; };
+		70E6C4212542581700A61108 /* MachineCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MachineCollectionViewCell.xib; sourceTree = "<group>"; };
+		70E6C42A25425B6F00A61108 /* Double+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Currency.swift"; sourceTree = "<group>"; };
+		70E6C42F25425D2C00A61108 /* Machines+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Machines+Protocols.swift"; sourceTree = "<group>"; };
+		70E6C43425425D8200A61108 /* MachinesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesPresenter.swift; sourceTree = "<group>"; };
 		742E7E47A2A9CCBC12345E92 /* Pods_Nospresso_NospressoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nospresso_NospressoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		953EC0A96A92AAB78721B2AA /* Pods-Nospresso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso.release.xcconfig"; path = "Target Support Files/Pods-Nospresso/Pods-Nospresso.release.xcconfig"; sourceTree = "<group>"; };
 		97AF4C3D338FA2EF2E1ECFCD /* Pods_NospressoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NospressoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				7041BEC2253F7F7200EC02A4 /* IntensityCounterStackView.swift */,
+				70E6C40425421CF900A61108 /* MeasureView.swift */,
+				70E6C40925421D1E00A61108 /* MeasureView.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -214,6 +234,7 @@
 		70798B132538F48C00535BF0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				70E6C4142542571500A61108 /* Machines */,
 				7041BEB8253F779300EC02A4 /* CoffeeDetails */,
 				70798B142538F49700535BF0 /* Coffees */,
 				709EF149253B17BC004CB823 /* NavbarProductsViewController.swift */,
@@ -316,8 +337,30 @@
 				709EF14F253B1F51004CB823 /* UIViewController+Helpers.swift */,
 				70421FE5253B3050009A3A8B /* Typealias.swift */,
 				70694378253D10C000936C39 /* UIImageView+LoadImage.swift */,
+				70E6C42A25425B6F00A61108 /* Double+Currency.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		70E6C4142542571500A61108 /* Machines */ = {
+			isa = PBXGroup;
+			children = (
+				70E6C41F254257E600A61108 /* Components */,
+				70E6C4152542573A00A61108 /* MachinesViewController.swift */,
+				70E6C4162542573A00A61108 /* MachinesViewController.xib */,
+				70E6C42F25425D2C00A61108 /* Machines+Protocols.swift */,
+				70E6C43425425D8200A61108 /* MachinesPresenter.swift */,
+			);
+			path = Machines;
+			sourceTree = "<group>";
+		};
+		70E6C41F254257E600A61108 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70E6C4202542581700A61108 /* MachineCollectionViewCell.swift */,
+				70E6C4212542581700A61108 /* MachineCollectionViewCell.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		B116195262B9484AB16D535F /* Frameworks */ = {
@@ -452,7 +495,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E6C40A25421D1E00A61108 /* MeasureView.xib in Resources */,
+				70E6C4232542581700A61108 /* MachineCollectionViewCell.xib in Resources */,
 				70798B0B2538EC7800535BF0 /* OpenSans-Italic.ttf in Resources */,
+				70E6C4182542573A00A61108 /* MachinesViewController.xib in Resources */,
 				70798B0A2538EC7800535BF0 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				70798B0D2538EC7800535BF0 /* OpenSans-SemiBold.ttf in Resources */,
 				70421FF2253B3241009A3A8B /* CoffeeCategoryHeaderView.xib in Resources */,
@@ -618,6 +664,7 @@
 				7097BC7A253639C200F33603 /* ViewController.swift in Sources */,
 				70421FED253B3200009A3A8B /* CoffeeCategoryHeaderView.swift in Sources */,
 				7041BEC8253F888100EC02A4 /* CoffeeDetailsPresenter.swift in Sources */,
+				70E6C4172542573A00A61108 /* MachinesViewController.swift in Sources */,
 				7097BCD325365A5800F33603 /* Endpoint.swift in Sources */,
 				70421FE6253B3050009A3A8B /* Typealias.swift in Sources */,
 				7097BCB32536592B00F33603 /* CoffeeCategory.swift in Sources */,
@@ -626,14 +673,19 @@
 				709EF14A253B17BC004CB823 /* NavbarProductsViewController.swift in Sources */,
 				7041BEC3253F7F7200EC02A4 /* IntensityCounterStackView.swift in Sources */,
 				70694379253D10C000936C39 /* UIImageView+LoadImage.swift in Sources */,
+				70E6C4222542581700A61108 /* MachineCollectionViewCell.swift in Sources */,
+				70E6C43025425D2C00A61108 /* Machines+Protocols.swift in Sources */,
+				70E6C42B25425B6F00A61108 /* Double+Currency.swift in Sources */,
 				7097BCBB2536595E00F33603 /* CoffeeItem.swift in Sources */,
 				7097BCC0253659BF00F33603 /* Machine.swift in Sources */,
+				70E6C43525425D8200A61108 /* MachinesPresenter.swift in Sources */,
 				7097BCCB25365A0200F33603 /* Api.swift in Sources */,
 				70798B1E2538FAA400535BF0 /* CoffeeTableViewCell.swift in Sources */,
 				7041BECD253F890200EC02A4 /* CoffeeDetail+Protocols.swift in Sources */,
 				7097BCC5253659EB00F33603 /* Accessory.swift in Sources */,
 				709EF150253B1F51004CB823 /* UIViewController+Helpers.swift in Sources */,
 				7041BEBD253F77E400EC02A4 /* CoffeeDetailsViewController.swift in Sources */,
+				70E6C40525421CF900A61108 /* MeasureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,18 +21,28 @@ class IntensityCounterStackView: UIStackView {
         
         ball.layer.cornerRadius = ballSize / 2
         ball.layer.borderWidth = 0.4
-        ball.layer.borderColor = UIColor.black.cgColor
-        
-        ball.backgroundColor = .systemGray
+
+        ball.layer.borderColor = (shouldFill ? UIColor.black : Colors.borderEmptyIntensity())?.cgColor
+        ball.backgroundColor = shouldFill ? Colors.filledIntensity() : Colors.emptyIntensity()
         
         return ball
     }
     
     func config(for intensity: Int) {
+        let emptyBallsQuantity = maxIntensity - intensity
+        
         for _ in 0..<intensity {
             let ball = generateBall(shouldFill: true)
 
             addArrangedSubview(ball)
         }
+        
+        for _ in 0..<emptyBallsQuantity {
+            let ball = generateBall(shouldFill: false)
+
+            addArrangedSubview(ball)
+        }
+        
+        addArrangedSubview(UIView())
     }
 }
